@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kosugi');
+@import url("https://fonts.googleapis.com/css?family=Kosugi");
 html {
   height: 100%;
 }
@@ -24,7 +24,7 @@ p {
 #main {
   margin: auto;
   height: 100%;
-  padding: 20px;
+  padding: 40px;
   max-width: 1700px;
   display: flex;
   background-color: #242424;
@@ -69,10 +69,9 @@ p {
   list-style-type: none;
 }
 
-
 .contents_group {
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
@@ -89,21 +88,22 @@ p {
   }
 }
 
-.image {
-  width: 80%;
+.project_image {
+  width: 50%;
   height: auto;
   margin: 10px;
   user-select: none;
+  list-style: none;
 }
-.image img {
+.project_image img {
   width: 100%;
   border-radius: 10px;
   will-change: filter;
   filter: drop-shadow(0 0 1.5em #494949);
   transition: transform 0.4s;
 }
-.image img:hover {
-  transform: scale(1.02);
+.project_image img:hover {
+  transform: scale(0.99);
 }
 
 .contents {
@@ -162,4 +162,41 @@ p {
   font-size: 15px;
   text-align: left;
   padding: 5px;
+}
+
+.contents_group {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.slide-items {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+.slide-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-dots li button:before {
+  font-size: 18px;
+  top: 6px;
 }

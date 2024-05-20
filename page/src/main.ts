@@ -1,9 +1,12 @@
-import './style.css'
 import $ from 'jquery'
 import 'slick-carousel'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 $('.project_image').slick({
-    autoplay: true, // 自動再生
-    arrows: true, // 矢印
-    dots: true, // インジケーター
+    autoplay: true,
+    arrows: true,
+    dots: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
 });

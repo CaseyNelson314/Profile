@@ -7,7 +7,7 @@ body {
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
-  background-image: url('/Background.png');
+  /* background-image: url('/Background.png'); */
   background-attachment: fixed;
 }
 

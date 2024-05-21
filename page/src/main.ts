@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 $('.project_image').slick({
     autoplay: true,
-    arrows: false,
+    arrows: true,
     dots: true,
     autoplaySpeed: 2500,
     pauseOnHover: true,

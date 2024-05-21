@@ -5,15 +5,18 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="/src/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/slick-carousel/slick/slick-theme.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/src/main.ts"></script>
   <title>profile</title>
 </head>
 
 <body>
-  <script type="module" src="/src/main.ts"></script>
   <div id="main">
-    <div class="introduce">
+    <div class="first">
+    </div>
+    <!-- <div class="introduce">
       <div class="profile_card">
         <div class="profile_left">
           <img src="/GitHubLogo.png" class="profile_icon" alt="profile" />
@@ -50,12 +53,9 @@
               </li>
             </ul>
           </div>
-          <!-- <p>
-            高専生です。ロボット、プログラミングが好きです。部活動ではロボコンに参加しています。Web サイト、Web アプリ、ライブラリを制作しています。
-          </p> -->
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 取り組み -->
     <div class="contents_group">
       <div class="image_group">
@@ -84,8 +84,49 @@
             <li>
               <p class="subtitle">使用技術</p>
               <p class="text">
-                Autodesk Fusion360 を用いた設計、基板設計
-                GitHub を用いたチーム開発
+              <p>Autodesk Fusion360 を用いた設計、基板設計</p>
+              <p>GitHub を用いたチーム開発</p>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contents_group reverse">
+      <div class="image_group">
+        <div class="project_image">
+          <img src="/Visualizer.png" alt="image" />
+          <img src="/Visualizer.png" alt="image" />
+        </div>
+      </div>
+      <div class="contents">
+        <div class="title">
+          <p>Visualizer</p>
+          <div class="title_icon">
+            <a href="https://github.com/CaseyNelson314/Visualizer">
+              <img src="/GitHubLogo.png" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+        <div class="description">
+          <ul>
+            <li>
+              <p class="subtitle">概要</p>
+              <p class="text">
+                ロボットに搭載されている紙飛行機の発射機構の操縦アプリです。操縦者側で使用し、目標となる台を選択すると、機構の角度などをロボットに送信します。
+                2022 年度全国高専ロボコン 四国地区大会、全国大会で使用しました。
+              </p>
+            </li>
+            <li>
+              <p class="subtitle">開発経緯</p>
+              <p class="text">
+                目標の台の選択をコントローラーで行うのは難しいと感じたため、直感的に操作できるアプリを制作しました。OpenSiv3D を通じてオブジェクト指向の設計を学びました。
+              </p>
+            </li>
+            <li>
+              <p class="subtitle">使用技術</p>
+              <p class="text">
+                OpenSiv3D / Arduino / C++
               </p>
             </li>
           </ul>
@@ -159,7 +200,7 @@
         </div>
       </div>
     </div>
-    <div class="contents_group">
+    <div class="contents_group reverse">
       <div class="image_group">
         <div class="project_image">
           <img src="EFSim0.png" alt="image" />
@@ -247,47 +288,6 @@
         </div>
       </div>
     </div>
-    <div class="contents_group">
-      <div class="image_group">
-        <div class="project_image">
-          <img src="/Visualizer.png" alt="image" />
-          <img src="/Visualizer.png" alt="image" />
-        </div>
-      </div>
-      <div class="contents">
-        <div class="title">
-          <p>Visualizer</p>
-          <div class="title_icon">
-            <a href="https://github.com/CaseyNelson314/Visualizer">
-              <img src="/GitHubLogo.png" alt="GitHub" />
-            </a>
-          </div>
-        </div>
-        <div class="description">
-          <ul>
-            <li>
-              <p class="subtitle">概要</p>
-              <p class="text">
-                ロボットに搭載されている紙飛行機の発射機構の操縦アプリです。操縦者側で使用し、目標となる台を選択すると、機構の角度などをロボットに送信します。
-                2022 年度全国高専ロボコン 四国地区大会、全国大会で使用しました。
-              </p>
-            </li>
-            <li>
-              <p class="subtitle">開発経緯</p>
-              <p class="text">
-                目標の台の選択をコントローラーで行うのは難しいと感じたため、直感的に操作できるアプリを制作しました。OpenSiv3D を通じてオブジェクト指向の設計を学びました。
-              </p>
-            </li>
-            <li>
-              <p class="subtitle">使用技術</p>
-              <p class="text">
-                OpenSiv3D / Arduino / C++
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
     <!--
 
@@ -331,7 +331,13 @@
 
      -->
 
+    <div class="footer">
+      <div class="footer_text">
+        <p>© 2024 CaseyNelson314</p>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>

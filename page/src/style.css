@@ -81,9 +81,8 @@ p {
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
-  border-radius: 10px;
   background-color: #343434;
-  box-shadow: 0 0 1em #494949;
+  /* box-shadow: 0 0 1em #494949; */
   animation-name: fadeUpAnime;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -100,22 +99,16 @@ p {
     transform: translateY(0px);
   }
 }
-@media (width < 1400px) {
-  .contents_group {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
 
 .image_group {
-  width: 40%;
+  width: 50%;
   margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .project_image {
   width: 100%;
   margin: 0px;
@@ -125,18 +118,39 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .project_image img {
   border-radius: 10px;
 }
 
 .contents {
-  width: 60%;
   height: 100%;
   padding: 10px 40px 0 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
+
+@media (width < 1400px) {
+  #main {
+    padding: 0;
+  }
+  .profile_card {
+    border-radius: 0;
+  }
+  .contents_group {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_group {
+    width: 85%;
+  }
+  .contents {
+    width: 95%;
+  }
+}
+
 .title {
   height: 100%;
   font-size: 35px;

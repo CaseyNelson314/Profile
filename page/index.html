@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <canvas id="glcanvas"></canvas>
   <div class="top">
     <div class="self_introduction_group">
       <div class="self_introduction">
@@ -30,6 +31,10 @@
             </li>
             <li>
               <div class="title">趣味</div>
+              <p>プログラミング / サイクリング / 読書</p>
+            </li>
+            <li>
+              <div class="title">興味</div>
               <p>プログラミング / サイクリング / 読書</p>
             </li>
           </ul>
@@ -104,7 +109,7 @@
               </p>
             </li>
             <li>
-              <p class="subtitle">使用技術</p>
+              <p class="description_title">使用技術</p>
               <div class="text">
                 <p>Autodesk Fusion360 を用いた設計、基板設計</p>
                 <p>GitHub を用いたチーム開発</p>
@@ -119,7 +124,6 @@
         <div class="project_image">
           <img src="/UdonLibrary0.png" alt="image" />
           <img src="/UdonLibrary1.png" alt="image" />
-          <img src="/UdonLibrary2.png" alt="image" />
         </div>
       </div>
       <div class="contents">
@@ -137,34 +141,34 @@
         <div class="description">
           <ul>
             <li>
-              <p class="subtitle">概要</p>
+              <p class="description_title">概要</p>
               <div class="text">
                 <p>Arduino (C++) ライブラリ</p>
                 <p>アルゴリズム、通信、ユーザー定義型、シリアライザ、ドライバ等の機能を提供しています。香川県といえばうどんということで、UdonLibrary と名付けました。</p>
               </div>
             </li>
             <li>
-              <p class="subtitle">開発経緯</p>
+              <p class="description_title">開発経緯</p>
               <p class="text">
                 開発時間の短縮、品質向上、再利用性の向上のために制作しました。
                 ライブラリの技術水準を上げることで、部員のプログラミングスキル向上に繋がると考えており、実際にその効果があったと感じています。
               </p>
             </li>
             <li>
-              <p class="subtitle">ライブラリ設計</p>
+              <p class="description_title">ライブラリ設計</p>
               <p class="text">
                 オブジェクト指向の原則に則って設計を行っており、使用者が直感的に使用できるように設計しています。モーター等のデバイスはクラスとして部品化され、部品を組み合わせることでロボットのプログラムを簡単に作成できます。
               </p>
             </li>
             <li>
-              <p class="subtitle">型安全な通信</p>
+              <p class="description_title">型安全な通信</p>
               <p class="text">
                 ROS に倣い、型を用いて通信を行っています。
                 これによりバイト列を直接扱うことなく通信を行えます。
               </p>
             </li>
             <li>
-              <p class="subtitle">CI/CD</p>
+              <p class="description_title">CI/CD</p>
               <p class="text">
                 GitHub Actions を用いて CI/CD を行っています。
                 GoogleTest、ArduinoCli を使用して、ユニットテスト、構文テストを行い品質を保証しています。
@@ -172,7 +176,7 @@
               </p>
             </li>
             <li>
-              <p class="subtitle">
+              <p class="description_title">
                 使用技術
               </p>
               <p class="text">
@@ -202,20 +206,20 @@
         <div class="description">
           <ul>
             <li>
-              <p class="subtitle">概要</p>
+              <p class="description_title">概要</p>
               <p class="text">
                 ロボット操縦アプリです。目標となる台を選択すると、紙飛行機を発射する機構の角度等の情報をロボットに送信します。
                 2022 年度全国高専ロボコン 四国地区大会、全国大会で使用しました。
               </p>
             </li>
             <li>
-              <p class="subtitle">開発経緯</p>
+              <p class="description_title">開発経緯</p>
               <p class="text">
                 目標の台の選択をコントローラーで行うのは難しいと感じたため、タッチ操作できるPCアプリを制作しました。
               </p>
             </li>
             <li>
-              <p class="subtitle">使用技術</p>
+              <p class="description_title">使用技術</p>
               <p class="text">
                 OpenSiv3D / Arduino / C++
               </p>
@@ -247,19 +251,19 @@
         <div class="description">
           <ul>
             <li>
-              <p class="subtitle">概要</p>
+              <p class="description_title">概要</p>
               <p class="text">
                 三次元電気力線シミュレータです。電荷の移動、パラメーターの変更ができ、リアルタイムにシミュレーションを行えます。
               </p>
             </li>
             <li>
-              <p class="subtitle">開発経緯</p>
+              <p class="description_title">開発経緯</p>
               <p class="text">
                 電磁気学の理解を深めるために制作しました。結果としてかなり深く理解できました。授業の教材として使用されています。
               </p>
             </li>
             <li>
-              <p class="subtitle">使用技術</p>
+              <p class="description_title">使用技術</p>
               <p class="text">
                 Three.js / TypeScript / GitHub Actions / GitHub Pages
               </p>
@@ -292,19 +296,19 @@
         <div class="description">
           <ul>
             <li>
-              <p class="subtitle">概要</p>
+              <p class="description_title">概要</p>
               <p class="text">
                 球面上に一様に分布された点の可視化 Web アプリです。
               </p>
             </li>
             <li>
-              <p class="subtitle">開発経緯</p>
+              <p class="description_title">開発経緯</p>
               <p class="text">
                 EFSim に用いられている 一般化螺旋集合アルゴリズムの挙動を確認するために制作しました。このアルゴリズムを用いて電気力線を出す方向を決定しています。
               </p>
             </li>
             <li>
-              <p class="subtitle">使用技術</p>
+              <p class="description_title">使用技術</p>
               <p class="text">
                 Three.js / TypeScript / GitHub Actions / GitHub Pages
               </p>
@@ -333,7 +337,7 @@
         <div class="description">
           <ul>
             <li>
-              <p class="subtitle">概要</p>
+              <p class="description_title">概要</p>
               <p class="text">
                 部活の作業机に取り付けているライトバーです。
               </p>
@@ -371,17 +375,17 @@
         <div class="description">
           <ul>
             <li>
-              <p class="subtitle">概要</p>
+              <p class="description_title">概要</p>
               <p class="text">
               </p>
             </li>
             <li>
-              <p class="subtitle">開発経緯</p>
+              <p class="description_title">開発経緯</p>
               <p class="text">
               </p>
             </li>
             <li>
-              <p class="subtitle">使用技術</p>
+              <p class="description_title">使用技術</p>
               <p class="text">
               </p>
             </li>

@@ -20,8 +20,19 @@
           <img src="/GitHubLogo.png" alt="icon" />
         </div>
         <div class="contents">
-          <p>CaseyNelson314</p>
-          <p>大河 祐介</p>
+          <div class="name">
+            <p>Okawa Yusuke</p>
+          </div>
+          <ul class="description">
+            <li>
+              <div class="title">在籍</div>
+              <p>香川高専高松キャンパス</p>
+            </li>
+            <li>
+              <div class="title">趣味</div>
+              <p>プログラミング / サイクリング / 読書</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -68,75 +79,7 @@
       </div>
     </div> -->
     <!-- 取り組み -->
-    <div class="contents_group">
-      <div class="image_group">
-        <div class="project_image">
-          <img src="/UdonLibrary0.png" alt="image" />
-          <img src="/UdonLibrary1.png" alt="image" />
-        </div>
-      </div>
-      <div class="contents">
-        <div class="title">
-          <p>UdonLibrary</p>
-          <div class="title_icon">
-            <a href="https://udonrobo.github.io/UdonLibrary/">
-              <img src="/UdonLogo.png" alt="UdonLibrary" />
-            </a>
-            <a href="https://github.com/udonrobo/UdonLibrary">
-              <img src="/GitHubLogo.png" alt="GitHub" />
-            </a>
-          </div>
-        </div>
-        <div class="description">
-          <ul>
-            <li>
-              <p class="subtitle">概要</p>
-              <div class="text">
-                <p>Arduino (C++) ライブラリ</p>
-                <p>アルゴリズム、通信、ユーザー定義型、シリアライザ、ドライバ等の機能を提供しています。香川県といえばうどんということで、UdonLibrary と名付けました。</p>
-              </div>
-            </li>
-            <li>
-              <p class="subtitle">開発経緯</p>
-              <p class="text">
-                開発時間の短縮、品質向上、再利用性の向上のために制作しました。
-                ライブラリの技術水準を上げることで、部員のプログラミングスキル向上に繋がると考えており、実際にその効果があったと感じています。
-              </p>
-            </li>
-            <li>
-              <p class="subtitle">ライブラリ設計</p>
-              <p class="text">
-                オブジェクト指向の原則に則って設計を行っており、使用者が直感的に使用できるように設計しています。モーター等のデバイスはクラスとして部品化され、部品を組み合わせることでロボットのプログラムを簡単に作成できます。
-              </p>
-            </li>
-            <li>
-              <p class="subtitle">型安全な通信</p>
-              <p class="text">
-                ROS に倣い、型を用いて通信を行っています。内部的にはシリアライザによってバイト列化され通信されます。
-                これにより、バイト列を直接扱うことなく通信を行えます。
-              </p>
-            </li>
-            <li>
-              <p class="subtitle">CI/CD</p>
-              <p class="text">
-                GitHub Actions を用いて CI/CD を行っています。
-                GoogleTest、ArduinoCli を使用して、ユニットテスト、構文テストを行い品質を保証しています。
-                Doxygen を使用してソースコードからドキュメントを自動生成しています。
-              </p>
-            </li>
-            <li>
-              <p class="subtitle">
-                使用技術
-              </p>
-              <p class="text">
-                C++ / Arduino / Doxygen / GitHub Actions / GitHub Pages
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="contents_group">
+    <div class="contents_group reverse">
       <div class="image_group">
         <div class="project_image">
           <img src="/Robocon0.png" alt="image" />
@@ -171,6 +114,75 @@
         </div>
       </div>
     </div>
+    <div class="contents_group">
+      <div class="image_group">
+        <div class="project_image">
+          <img src="/UdonLibrary0.png" alt="image" />
+          <img src="/UdonLibrary1.png" alt="image" />
+          <img src="/UdonLibrary2.png" alt="image" />
+        </div>
+      </div>
+      <div class="contents">
+        <div class="title">
+          <p>UdonLibrary</p>
+          <div class="title_icon">
+            <a href="https://udonrobo.github.io/UdonLibrary/" target="_blank" rel="noopener noreferrer">
+              <img src="/UdonLogo.png" alt="UdonLibrary" />
+            </a>
+            <a href="https://github.com/udonrobo/UdonLibrary" target="_blank" rel="noopener noreferrer">
+              <img src="/GitHubLogo.png" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+        <div class="description">
+          <ul>
+            <li>
+              <p class="subtitle">概要</p>
+              <div class="text">
+                <p>Arduino (C++) ライブラリ</p>
+                <p>アルゴリズム、通信、ユーザー定義型、シリアライザ、ドライバ等の機能を提供しています。香川県といえばうどんということで、UdonLibrary と名付けました。</p>
+              </div>
+            </li>
+            <li>
+              <p class="subtitle">開発経緯</p>
+              <p class="text">
+                開発時間の短縮、品質向上、再利用性の向上のために制作しました。
+                ライブラリの技術水準を上げることで、部員のプログラミングスキル向上に繋がると考えており、実際にその効果があったと感じています。
+              </p>
+            </li>
+            <li>
+              <p class="subtitle">ライブラリ設計</p>
+              <p class="text">
+                オブジェクト指向の原則に則って設計を行っており、使用者が直感的に使用できるように設計しています。モーター等のデバイスはクラスとして部品化され、部品を組み合わせることでロボットのプログラムを簡単に作成できます。
+              </p>
+            </li>
+            <li>
+              <p class="subtitle">型安全な通信</p>
+              <p class="text">
+                ROS に倣い、型を用いて通信を行っています。
+                これによりバイト列を直接扱うことなく通信を行えます。
+              </p>
+            </li>
+            <li>
+              <p class="subtitle">CI/CD</p>
+              <p class="text">
+                GitHub Actions を用いて CI/CD を行っています。
+                GoogleTest、ArduinoCli を使用して、ユニットテスト、構文テストを行い品質を保証しています。
+                Doxygen を使用してソースコードからドキュメントを自動生成しています。
+              </p>
+            </li>
+            <li>
+              <p class="subtitle">
+                使用技術
+              </p>
+              <p class="text">
+                C++ / Arduino / Doxygen / GitHub Actions / GitHub Pages
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="contents_group reverse">
       <div class="image_group">
         <div class="project_image">
@@ -182,7 +194,7 @@
         <div class="title">
           <p>Visualizer</p>
           <div class="title_icon">
-            <a href="https://github.com/CaseyNelson314/Visualizer">
+            <a href="https://github.com/CaseyNelson314/Visualizer" target="_blank" rel="noopener noreferrer">
               <img src="/GitHubLogo.png" alt="GitHub" />
             </a>
           </div>
@@ -199,7 +211,7 @@
             <li>
               <p class="subtitle">開発経緯</p>
               <p class="text">
-                目標の台の選択をコントローラーで行うのは難しいと感じたため、タッチ操作できるPCアプリを制作しました。OpenSiv3D を通じてオブジェクト指向の設計を学びました。
+                目標の台の選択をコントローラーで行うのは難しいと感じたため、タッチ操作できるPCアプリを制作しました。
               </p>
             </li>
             <li>
@@ -224,10 +236,10 @@
         <div class="title">
           <p>EFSim</p>
           <div class="title_icon">
-            <a href="https://caseynelson314.github.io/EFSim/">
+            <a href="https://caseynelson314.github.io/EFSim/" target="_blank" rel="noopener noreferrer">
               <img src="/EFSimLogo.png" alt="EFSim" />
             </a>
-            <a href="https://github.com/CaseyNelson314/EFSim">
+            <a href="https://github.com/CaseyNelson314/EFSim" target="_blank" rel="noopener noreferrer">
               <img src="/GitHubLogo.png" alt="GitHub" />
             </a>
           </div>
@@ -268,10 +280,11 @@
         <div class="title">
           <p>UniformPointVisualizer</p>
           <div class="title_icon">
-            <a href="https://caseynelson314.github.io/UniformPointVisualizer">
+            <a href="https://caseynelson314.github.io/UniformPointVisualizer" target="_blank" rel="noopener noreferrer">
               <img src="/UniformPointVisualizerLogo.png" alt="UniformPointVisualizer" />
             </a>
-            <a href="https://github.com/CaseyNelson314/UniformPointVisualizer">
+            <a href="https://github.com/CaseyNelson314/UniformPointVisualizer" target="_blank"
+              rel="noopener noreferrer">
               <img src="/GitHubLogo.png" alt="GitHub" />
             </a>
           </div>
@@ -312,7 +325,7 @@
         <div class="title">
           <p>Neopixel Lightbar</p>
           <div class="title_icon">
-            <a href="https://github.com/udonrobo/NeopixelLightbar">
+            <a href="https://github.com/udonrobo/NeopixelLightbar" target="_blank" rel="noopener noreferrer">
               <img src="/GitHubLogo.png" alt="GitHub" />
             </a>
           </div>

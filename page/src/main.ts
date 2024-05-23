@@ -13,3 +13,9 @@ $('.project_image').slick({
 });
 
 gl_main();
+
+$('.initiative_button').on('click', () => {
+    $('html, body').animate({
+        scrollTop: $('.initiative').offset()?.top
+    }, 1000);
+});

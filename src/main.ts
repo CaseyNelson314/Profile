@@ -1,5 +1,4 @@
 import $ from 'jquery'
-import { gl_main } from './webgl';
 import 'slick-carousel'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -20,7 +19,5 @@ $(window).on('load', () => {
             scrollTop: $('.initiative').offset()?.top
         }, 300);
     });
-    
-    gl_main();
 
 });

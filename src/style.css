@@ -254,7 +254,7 @@ p {
   align-items: center;
 }
 
-@media (width < 1200px) {
+@media (max-width: 1200px) {
   .top {
     width: 100%;
   }
@@ -291,7 +291,7 @@ p {
   }
 }
 
-@media (width < 800px) {
+@media (max-width: 800px) {
   .top {
     width: 100%;
     margin: 0;

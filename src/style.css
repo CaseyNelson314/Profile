@@ -214,6 +214,7 @@ p {
   margin-left: auto;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 .title_icon a {
   display: flex;
@@ -225,7 +226,12 @@ p {
   height: 40px;
   border-radius: 20%;
   margin: 0 10px 0 10px;
+  transition: 0.1s;
 }
+.title_icon img:hover {
+  scale: 1.1;
+}
+
 
 .description {
   display: flex;
@@ -360,7 +366,6 @@ p {
   }
   .contents_group.reverse {
     flex-direction: column;
-    margin: 0;
   }
   .image_group {
     width: 90%;
